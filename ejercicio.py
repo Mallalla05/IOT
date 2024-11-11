@@ -17,7 +17,7 @@ mapa['Incident Subcategory'] = df['Incident Subcategory']
 mapa['Resolution'] = df['Resolution']
 mapa['lat'] = df['Latitude']
 mapa['lon'] = df['Longitude']
-mapa = mapa.dropna()
+st.map(df)
 
 subset_data2 = mapa
 police_district_input = st.sidebar.multiselect(
